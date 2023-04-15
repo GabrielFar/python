@@ -20,14 +20,26 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
-import csv
+# import csv
 
-students = []
+# students = []
 
-with open("python/file_InputOutput/hogwarts_home.csv") as file:
-    reader = csv.reader(file)
-    for name, home in reader:
-        students.append({"name": name, "home": home})
+# with open("python/file_InputOutput/hogwarts_home.csv") as file:
+#     reader = csv.DictReader(file)
+#     for row in reader:
+#         students.append({"name": row["name"], "home": row["home"]})
 
-for student in sorted(students, key=lambda student: student["name"]):
-    print(f"{student['name']} is from {student['home']}")
+# for student in sorted(students, key=lambda student: student["name"]):
+#     print(f"{student['name']} is from {student['home']}")
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# import csv
+
+# name = input("What's youyr name? ")
+# home = input("Where's your home? ")
+
+# with open("python/file_InputOutput/hogwarts_home2.csv", "a") as file:
+#     # fieldnames serve para dizer ao programa em qual coluna os dados devem ir
+#     writer = csv.DictWriter(file, fieldnames=["name", "home"])
+#     writer.writerow({"name": name, "home": home})
